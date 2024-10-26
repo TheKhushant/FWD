@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            .style-div{
+                border: 5px inset gold; /* ridge */
+                width: 300px;
+                text-align: center;
+            }
+            .style-div2{
+                border: 5px inset pink; /* ridge */
+                width: 300px;
+                text-align: center;
+                background-image: linear-gradient( to right, red,orange,yellow,green,blue,indigo,violet);
+            }
+            .topDivs{
+                font-weight: bold;
+                font-size: 30px;
+
+            }
+            .bottomDivs{
+                color: green;
+                font-size: 20px;
+                /* border: 2px dotted red; */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="style-div style-div2">    
+            <div class="topDivs">
+                Hello World
+            </div>
+            <div class="topDivs">
+                Learn Css
+            </div>
+        </div>
+        <div class="style-div">    
+            <div class="bottomDivs">
+                From   
+            </div>
+            <div class="bottomDivs">
+                Bottom Style
+            </div>
+            <div class="bottomDivs">
+                <ol>
+                <li>Gandi</li>
+                <li>MCA</li>
+                <li>Jay Gandu</li>
+                </ol>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
