@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            working with forms
+        </title>
+    </head>
+    <body>
+        < action="">
+            <label for="fname">First Name : </label>
+            &nbsp;<input type="text" name="fname" size="50" placeholder="Enter First Name in CAPS" maxlength="5" id="fname"> 
+            <!-- value="f name" (ye default value set krta hai) -->
+             <br>
+             <label for="pass">Password &nbsp; : </label>
+             &nbsp;<input type="password" id="pass" name="pass" placeholder="Enter Password">
+
+             <br><br>
+             <p>Multi Line inpute : </p>
+             <textarea name="add" id="add" rows="20" cols="50">Enter address</textarea>
+
+             <br><br>
+             <input type="checkbox" name="maths" value="on"> Maths
+             <input type="checkbox" name="phy" value="on"checked> Physics 
+             <!-- by default checked rahega (checked) -->
+             <hr>
+             <br> <br>
+             <p>
+                Radio button
+             </p>
+             <input type="radio" id="html" name="fav_language" value="HTML">
+             <label for="html">HTML</label>
+             <hr>
+
+             <br><br>
+             <p>select optino</p>
+             <select name="dropdown" autofocus size=2>
+                <option value="Maths">Maths</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+             </select>
+                         
+             <br>
+             <p>File upload</p>
+             <input type="file" name="fileupload" accept="image/*"/>
+             
+             <br>
+             <p>Submit Reset and Image Button</p>
+             <input type="submit" name="submit" value="Submit">
+             <input type="reset" name="reset" value="Reset">
+             <input type="button" name="ok" value="OK">
+             <!-- javascript -->
+             <button type="button" onclick="msg()">Click Me !</button>
+             <!-- image on button -->
+             <input type="image" name="imagebutton" src="Khushant.png" height='50' width='50'>
+
+             <p>Date</p>
+             <label for="birthday">Birthday : </label>
+             <input type="date" name="birthday" id="birthday">
+             <!-- <input type="submit" value="Save my Birthday"> -->
+             <button type="button" onclick="save()">save birthday!</button>
+             <br><br>
+
+             <p>Number control</p>
+             <label for="quantity">Quantity : </label>
+             <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+              
+             <br>              <br>
+             <p>range control</p>
+             <input type="range" name="vol" id="vol" min="0" max="50">
+             <input type="reset" value="Reset">
+             
+        </form>
+        <script>
+            function msg() {
+                alert("helow khusahnt");
+            }
+            function save(){
+                alert("Birthday Save");
+            }
+        </script>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
