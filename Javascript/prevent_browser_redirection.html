@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: mediumslateblue;
+        }
+        div, h1{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" name="username" class="userclass" id="classid" value="uname" placeholder="enter Your Username...">
+        <br>
+        <br> <p id="output"></p>
+    </form>
+        <script type="text/javascript">
+            function printName(){
+                /* event.precentDefault(); to prevent browser redirection. Since there is no action set on form, brower redirects to same page and input is lost */
+                var myUsername = document.getElementById('classid').value;
+                document.getElementById("output").innerHTML = myUsername;
+                console.log(myUsername);
+            }
+        </script>
+</body>
+</html>
