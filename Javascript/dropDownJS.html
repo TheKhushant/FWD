@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>  
+        selsct your favorite food : 
+        <select id="myList" onchange="myFun()">
+            <option></option>
+            <option>Pizza</option>
+            <option>Aloo Paratha</option>
+            <option>Sandwich</option>
+            <option>Burger</option>
+            <option>Burger</option>
+            
+        </select>
+        <p>your Favorite food is : <input type="text" id="demo" size="20"></p>
+    </form>
+    <script>
+        function myFun(){
+            var mylist = document.getElementById("myList");
+            document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+        }
+    </script>
+</body>
+</html>
